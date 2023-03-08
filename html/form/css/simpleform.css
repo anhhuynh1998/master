@@ -1,0 +1,12 @@
+caption {
+    background-color: rgb(255, 89, 0)
+    ;
+    color: aliceblue;
+}
+table {
+    font-family: arial, sans-serif;
+}
+th td{
+    border: 1px;
+    background-color: brown;
+}
