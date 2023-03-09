@@ -1,0 +1,43 @@
+.a{
+    border: 1px;
+    border-collapse: collapse;
+    background-color: orange;
+    color: white;
+    width: 600px;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: blue;
+}
+#c{
+    background-color: red;
+}
+#x{
+    background-color: blue;
+}
+.d{
+    background-color: white;
+    color: black;
+}
+#q{
+   color: red;
+}
+#w{
+   color: blue;
+}
+.b{
+    width:600px;
+    text-align: center;
+    border-collapse: collapse;
+
+}
+sub{
+   font-size: 8px;
+}
+#as{
+    color: red;
+}
+#g{
+    color: blue;    
+}
