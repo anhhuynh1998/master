@@ -5,30 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>student registaration form</title>
+    <style>
+        table,tr,td{
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 <body>
     <form action="">
         
         <table>
-            <thead>
-                <th>Student registaration form</th>
+            <thead align="right">
+                <th colspan="3">Student registaration form</th>
             </thead>
             <tbody>
                 <tr>
                     <td>First Name</td>
-                    <td>
+                    <td colspan="2">
                         <input type="text" name="First Name" placeholder="Endter your first name">
                     </td>
                 </tr>
                 <tr>
                     <td>Last Name</td>
-                    <td>
+                    <td colspan="2">
                         <input type="text" name="last name" placeholder="Enter your last name">
                     </td>
                 </tr>
                 <tr>
                     <td>Email</td>
-                    <td><input type="email" name="Email" placeholder="it should cpmtain @..."></td>
+                    <td colspan="2"><input type="email" name="Email" placeholder="it should cpmtain @..."></td>
                 </tr>
                 <tr>
                     <td>Mobile</td>
@@ -39,37 +44,38 @@
                 <tr>
                     <td>Gender</td>
                     <td>
-                        <input type="radio" name="Gender">Male
+                        <input type="radio" name="Gender" size="10px">Male
                     </td>
                     <td><input type="radio" name="Gender">Female</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>Date Of Birth</td>
-                    <td>
+                    <td colspan="2">
                         <input type="date">
                     </td>
                 </tr>
                 <tr>
                     <td>Address</td>
-                    <td>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <td colspan="2">
+                        <textarea name="" id="" cols="20" rows="10"></textarea>
                     </td>
                 </tr>
                 <tr>
                     <td>City</td>
-                    <td>
+                    <td colspan="2">
                         <input type="text">
                     </td>
                 </tr>
                 <tr>
                     <td>Area PIN</td>
-                    <td>
+                    <td colspan="2">
                         <input type="text">
                     </td>
                 </tr>
                 <tr>
                     <td>State</td>
-                    <td><input type="text"></td>
+                    <td colspan="2"><input type="text"></td>
                 </tr>
                 <tr>
                     <td>Qualification</td>
@@ -96,7 +102,7 @@
                     <td><input type="text"></td>
                 </tr>
                 <tr>
-                    <td><input type="submit" name="Registered"></td>
+                    <td><input type="submit" value="Registered" name="Registered"></td>
                 </tr>
             </tbody>
         </table>
