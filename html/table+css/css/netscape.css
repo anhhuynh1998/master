@@ -1,0 +1,30 @@
+table{
+    background-color: orange;
+   border-collapse: collapse;
+   border: 10px;
+   font-size: 30px;
+   border-width: 10px;
+   border-style: solid;
+   border-color: orange;
+}
+td{
+    width: 60px;
+    height: 60px;
+}
+th{
+    padding: 1px;
+    background-color: orange;
+}
+table>tbody>tr:nth-child(odd)>td:nth-child(odd){
+    background-color: black;
+}
+table>tbody>tr:nth-child(odd)>td:nth-child(even){
+    background-color: white;
+}
+table>tbody>tr:nth-child(even)>td:nth-child(even){
+    background-color: black;
+}
+table>tbody>tr:nth-child(even)>td:nth-child(odd){
+    background-color: white;
+}
+
