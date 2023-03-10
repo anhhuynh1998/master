@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img class="car" src="img/r.png" alt="">
+    <button id="l" onclick="Right()">Right</button>
+    <button id="a" onclick="Left()">Left</button>
+    <button id="u" onclick="Up()">Up</button>
+    <button id="d" onclick="Down()">Down</button>
+    <script>
+        function Right(){
+            if(document.getElementById('l').innerText == 'Right'){
+                document.getElementsByClassName('car')[0].src = 'img/d.png';
+                document.getElementById('l').innerText = 'Rigth'
+            }
+        }
+        function Left(){
+            if(document.getElementById('a').innerText == 'Left'){
+                document.getElementsByClassName('car')[0].src = 'img/l.png';
+                document.getElementById('a').innerText = 'Left'
+        }
+    }
+            
+        function Up(){
+            if(document.getElementById('u').innerText == 'Up'){
+                document.getElementsByClassName('car')[0].src = 'img/u.png';
+                document.getElementById('u').innerText = 'Up'
+            }
+        }
+        function Down(){
+            if(document.getElementById('d').innerText == 'Down'){
+                document.getElementsByClassName('car')[0].src = 'img/r.png';
+                document.getElementById('d').innerText = 'Down'
+            }
+        }
+
+    </script>
+</body>
+</html>
