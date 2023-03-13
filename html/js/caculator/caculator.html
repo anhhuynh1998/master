@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caculator</title>
+</head>
+<body>
+    <form action="">
+       <table>
+        <thead>
+            <th>Caculator</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2"><input type="number" id="ad" placeholder="Nhập số thứ 1"></td>
+                <td colspan="2"><input type="number" id="bb" placeholder="Nhập số thứ 2"></td>
+            </tr><br>
+            <tr>
+                <td><button type="button" onclick="Addition()">Addition</button></td>
+                <td><button type="button" onclick="Subtraction()">Subtraction</button></td>
+                <td><button type="button" onclick="Multiplication()">Multiplication</button></td>
+                <td><button type="button" onclick="Division()">Division</button></td>
+            </tr>
+            <tr>
+                <td>kết quả :</td>
+                <td id="m"></td>
+            </tr>
+        </tbody>
+       </table>
+    </form>
+    <script src="caculator.js"></script>
+</body>
+</html>
