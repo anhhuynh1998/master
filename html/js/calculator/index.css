@@ -1,0 +1,17 @@
+input{
+    border-radius: 21px;
+    font-size:34px;
+    height: 65px;
+    width: 260px;
+}
+button{
+    border-radius: 20px;
+    font-size: 20px;
+    background: #ffffff;
+    width: 60px;
+    height: 50px;
+}
+td{
+    width: 60px;
+    height: 50px;
+}

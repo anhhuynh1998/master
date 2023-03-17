@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div class="imge">
+    <img id="sut" src="/img/img1.jpg" onclick="imG()">
+    <img id="vao" src="/img/img2.jpg" onclick="change()">
+    <img id="nha" src="/img/img3.jpg" onclick="shotgun()">
+    <img id="may" src="/img/img4.jpg" onclick="awm()">
+  </div>
+    <script>
+        let index = 0;
+            function imG(){
+                let imgs = ["/img/img1.jpg","/img/img5.jpg","/img/img9.jpg"];
+                document.getElementById('sut').src = imgs[index];
+                index++;
+                if(index==3){
+                    index = 0;
+                }
+            }
+            function change(){
+                let imgs = ["/img/img2.jpg","/img/img6.jpg","/img/img10.jpg"];
+                document.getElementById('vao').src = imgs[index];
+                index++;
+                if(index==3){
+                    index = 0;
+                }
+            }
+            function shotgun(){
+                let imgs = ["/img/img3.jpg","/img/img7.jpg","/img/img11.jpg"];
+                document.getElementById('nha').src = imgs[index];
+                index++;
+                if(index==3){
+                    index = 0;
+                }
+            }
+            function awm(){
+                let imgs = ["/img/img4.jpg","/img/img8.jpg","/img/img12.jpg"];
+                document.getElementById('may').src = imgs[index];
+                index++;
+                if(index==3){
+                    index = 0;
+                }
+            }
+    </script>
+</body>
+</html>

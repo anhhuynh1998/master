@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight</title>
+</head>
+<body>
+    <h1>Tính chỉ số cân nặng</h1>
+    <label for="can_nang"> Nhập cân nặng:  (kg)</label>
+    <input type="text" name="" id="wei">
+    <br>
+    <br>
+    <label for="chieu_cao"> Nhập chiều cao:  (m)</label>
+    <input type="text" name="" id="hei">
+    <br>
+    <br>
+    <button onclick="cao()">Kiểm tra</button>
+    
+    <p id="result"></p>
+    <script>
+        function cao(){
+            let bot = +document.getElementById('wei').value;
+            let top = +document.getElementById('hei').value;
+            let cam = bot/(top*top)
+            let result = ""
+            if (cam < 18)
+               result ="Underweight";
+            else if (cam < 25.0)
+               result ="Normal";
+            else if (cam < 30.0)
+           result ="Overweight";
+            else
+               result ="Obese";
+            document.getElementById('result').innerHTML = cam + result
+        }
+        
+    </script>
+</body>
+</html>
