@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouth</title>
+</head>
+<body>
+    <h1>Kiểm tra số ngày trong tháng</h1>
+    <input type="number" min="1" max="12" id="bouth" placeholder="Nhập tháng" style="width: 50px;">
+    <button onclick="check()">Check</button>
+    <p id="result">kết quả :</p>
+    <script>
+        let thang_1 = "1";
+        let thang_2 = "2";
+        let thang_3 = "3";
+        let thang_4 = "4";
+        let thang_5 = "5";
+        let thang_6 = "6";
+        let thang_7 = "7";
+        let thang_8 = "8";
+        let thang_9 = "9";
+        let thang_10 = "10";
+        let thang_11 = "11";
+        let thang_12 = "12";
+        function check() {
+            let mouth = document.getElementById('bouth').value;
+            // if(mouth ==thang_1 || mouth ==thang_3 ||mouth ==thang_5 ||mouth ==thang_7 ||mouth ==thang_8 ||mouth ==thang_10 || mouth ==thang_12 ) {
+            //     document.getElementById("result").innerHTML = "tháng này có 31 ngày"
+            // }
+            // else if (mouth ==thang_4 || mouth ==thang_6 ||mouth ==thang_5 ||mouth ==thang_9 || mouth ==thang_11){
+            //     document.getElementById("result").innerHTML = "tháng này có 30 ngày"
+            // }
+            // else if(mouth==thang_2){
+            //     document.getElementById("result").innerHTML = "tháng này có 28 hoặc 29 ngày"
+            // }
+            // else{
+            //     document.getElementById("result").innerHTML = "vui lòng nhập lại"
+            // }
+            switch(mouth){
+                case thang_1:
+                case thang_3:
+                case thang_5:
+                case thang_7:
+                case thang_8:
+                case thang_10:
+                case thang_12:
+                document.getElementById("result").innerHTML = "tháng này có 31 ngày";
+                break;
+                case thang_4:
+                case thang_6:
+                case thang_9:
+                case thang_11:
+                document.getElementById("result").innerHTML = "tháng này có 30 ngày";
+                break;
+                case thang_2:
+                document.getElementById("result").innerHTML = "tháng này có 28 hoặc 29 ngày";
+                break;
+               default:
+                document.getElementById("result").innerHTML = "vui lòng nhập lại";
+
+            }
+        }
+    </script>
+</body>
+</html>
