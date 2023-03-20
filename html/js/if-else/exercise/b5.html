@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rank</title>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    Average Score
+                </td>
+                <td>
+                    <input type="number" id="aveScore">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="right">
+                    <button onclick="rank()">Rank</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Result</td>
+                <td>
+                    <input type="text" id="result" disabled>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+         function rank() {
+            let aveScore = +document.getElementById('aveScore').value;
+            let result = `${(aveScore < 0 || aveScore > 10) ? "Invalid score" :
+                (aveScore >= 9 && aveScore < 10) ? "Xuất sắc" :
+                    (aveScore >= 8 && aveScore < 9) ? "Giỏi" :
+                        (aveScore >= 7 && aveScore < 8) ? "Khá" :
+                            (aveScore >= 5 && aveScore < 7) ? "Trung bình" : "Yếu"}`;
+            document.getElementById('result').value = result;
+        }
+    </script>
+</body>
+</html>
