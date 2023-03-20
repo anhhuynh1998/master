@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td><img src="/img/off.png" id="a1" onclick="change(1,2,3)">GOOD</td>
+            </tr>
+            <tr>
+                <td><img src="/img/off.png" id="a2" onclick="change(2,3,1)">FAST</td>
+            </tr>
+            <tr>
+                <td><img src="/img/off.png" id="a3" onclick="change(3,1,2)">CHEAP</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        const on='http://127.0.0.1:5500/img/on.png'
+        const off='http://127.0.0.1:5500/img/off.png'
+        function change(r,e,g) {
+            let a1=document.getElementById(`a${r}`)  
+            
+           if (a1.src==off){document.getElementById(`a${r}`).src=on}
+           else{document.getElementById(`a${r}`).src=off}
+            if(document.getElementById("a1").src==on&&document.getElementById("a2").src==on&&document.getElementById("a3").src==on){
+               let rd= Math.floor(Math.random() * 2)
+               if(rd==0){document.getElementById(`a${e}`).src=off}
+               else{document.getElementById(`a${g}`).src=off}
+            }
+        }
+    </script>
+</body>
+</html>
