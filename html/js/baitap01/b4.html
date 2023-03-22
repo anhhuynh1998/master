@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        nhập số bạn cần tìm<input type="number" id="number">
+    </p>
+    <p>
+        <button onclick="fibonaci()">nhấn</button>
+    </p>
+    <p id="result"></p>
+    <script>
+        // let number = +prompt('nhập số')
+        function fibonaci() {
+           let number = document.getElementById('number').value
+            let fn_1 = 1;
+            let fn_2 = 1;
+            let fn = fn_1 + fn_2;
+            while (fn % number != 0) {
+                fn_2 = fn_1;
+                fn_1 = fn;
+                fn = fn_1 + fn_2;
+            }
+            document.getElementById('result').innerHTML = fn
+        }
+        // let fn_1 = 1;
+        // let fn_2 = 1;
+        // let fn = fn_1 + fn_2;
+        // while(fn % number != 0){
+        //     fn_2 = fn_1;
+        //     fn_1 = fn ;
+        //     fn = fn_1 + fn_2;
+        // }
+        // document.write(fn)
+        // for (let i = 1; i <= 1000; i++) {
+        //     document.write(a);
+        //     temp = a + b;
+        //     a = b;
+        //     b = temp;
+        // }
+        // if (number % 5) {
+        //     document.write('đây là số chia hết cho 5')
+        // }
+    </script>
+</body>
+
+</html>

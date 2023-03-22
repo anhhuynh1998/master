@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiplication table</title>
+</head>
+<body>
+    <caption>Bảng cửu chương</caption>
+    <script>
+        let sout, i, j;
+        sout = "<table border='1' width='350' cellspacing='0' cellpadding='10'>";
+        debugger;
+        for (i = 2; i <= 9; i++) {
+            sout = sout + "<tr>";
+            for (j = 2; j <= 9; j++) {
+                sout = sout + "<td>" + j + "x" + i + "=" + i * j + "</td>";
+            }
+            sout = sout + "</tr>";
+            // j = 1;
+        }
+        sout = sout + "</table>";
+        document.write(sout);
+    </script>
+</body>
+</html>
