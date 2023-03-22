@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let x = +prompt('nhập x')
+        let n = +prompt('nhập n')
+        let T = 1;
+        let S = 1;
+        let M;
+        let N;
+        for (let i = 1; i <= n; i++) {
+            T = Math.pow(x, (2 * i));
+            M = i * 2;
+            N = N * M * (M - 1);
+            S = S + T / N;
+        }
+        alert(S)
+    </script>
+</body>
+
+</html>

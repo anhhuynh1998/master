@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <input type="number" id="x">
+    </p>
+    <p>
+        <input type="number" id="y">
+    </p>
+    <p>
+        <button onclick="Sum()">Kết quả</button>
+    </p>
+    <p id="result"></p>
+    <script>
+        function Sum() {
+            let x = document.getElementById('x').value;
+            let y = document.getElementById('y').value;
+            let T = 1;
+            let S = 0;
+            let M = 1;
+            for (let i = 1; i <= y; i++) {
+                T = T * x
+                M = M * i
+                S = S + T/M
+            }
+            document.getElementById('result').innerHTML = S
+        }
+    </script>
+</body>
+</html>
