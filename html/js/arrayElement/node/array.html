@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let numbers = [];
+        for (let i = 0; i < 5; i++) {
+            numbers[i] = [];
+            for (let j = 0; j < 7; j++) {
+                numbers[j] = Math.floor((Math.random() * (50 - 10)) + 10);
+            }
+            j = 0;
+            document.write(numbers.join(' ') + "<br>")
+        }
+        console.log(numbers)
+        // let data = ''
+        // for (let x = 0; x < numbers.length; x++) {
+        //     data += '<br>'
+        //     for (let y = 0; y < numbers[x].length; y++) {
+        //         data = data + numbers[x][y] + `&ensp;`
+        //     }
+        // }
+    </script>
+</body>
+
+</html>
