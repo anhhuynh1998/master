@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = +prompt('nhập vào a');
+        let b = +prompt('nhập vào b');
+        let c = +prompt('nhập vào c');
+        let min = a;
+        switch (min > b) {
+            case true:
+                switch (min > c) {
+                    case true:
+                        min = c;
+                        break;
+                            case false:
+                                min = b;
+                                break;
+                }
+                break;
+            switch(min < c){
+                case true :
+                min = c;
+                break;
+            }
+        }
+        document.write(min)
+    </script>
+</body>
+
+</html>
