@@ -1,0 +1,107 @@
+.row{
+    position: relative;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.product{
+    background-color: rgba(240, 248, 255, 0.913);
+    border: 1px solid rgb(202, 31, 19);
+    position: relative;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+img{
+    height: 65%;
+    width: 100%;
+    
+
+}
+#gia{
+  color: red;
+}
+button{
+    margin: 10px 10px 10px 10px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 370px;
+    height: 40px;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#img{
+    width: 67px;
+}
+.container{
+    width: 100%;
+    height: 100px;
+     display: flex;
+     background-color: rgb(249, 249, 249);
+     box-sizing: border-box;
+     z-index: 1;
+     position: fixed;
+     top: 0;
+}
+.backgou{
+    display: flex;
+    align-items: center;
+    margin: 50px;
+
+}
+
+.id{
+    margin: 30px;
+}
+.id :hover{
+    color: red;
+}
+.backgou a{
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+.circle-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: white;
+    text-align: center;
+    line-height: 32px !important;
+    color: black;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.accout-menu{
+    margin-left: 400px;
+}
+.container-fom{
+    display: flex;
+    background-color: #ffeae3
+}
+.logo-ft>img{
+    width: 67px;
+}
+.f-menu{
+    display: flex;
+    margin-left: 200px;
+}
+.form-group input{
+    width: 200px;
+    height: 30px;
+}
+.btn{
+    width: 100px;
+}
+.item{
+    margin-left: 50px;
+}
