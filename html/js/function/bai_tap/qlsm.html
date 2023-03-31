@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .click {
+            display: flex;
+            width: 20px;
+            height: 20px;
+            margin: 10px;
+        }
+        button{
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Các sản phẩm: </h2>
+    <!-- <button type="button" onclick="add(matHang)">Thêm</button>
+    <button type="button" onclick="edit(matHang)">Sửa</button>
+    <button type="button" onclick="xoa(matHang)">Xóa</button> -->
+    <div class="show">
+        <div>
+            <input type="text" id="new" placeholder="newProduct">
+            <button type="button" onclick="showProduct()">Show</button>
+            <button type="button" onclick="createNew()">Add</button>
+            <p id="sumProduct"></p>
+        </div>
+        <div class="click">
+            <table >
+                <tbody id="products">
+                    <tr>
+                        <td>Mac</td>
+                        <td>
+                            <button type="button" onclick="Edit(i)">Edit</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="Delete(i)">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        let product = ['iphone','mac','sam sung'];
+        function showProduct(){
+            let content = "";
+            for(let i = 0; i< product.length; i++){
+                content+=`
+                    <tr>
+                        <td>${product[i]}</td>
+                        <td>
+                            <button type="button" onclick="Edit()">Edit</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="Delete()">Delete</button>
+                        </td>
+                    </tr>
+                `
+            }
+            document.getElementById('products').innerHTML = content;
+            document.getElementById('sumProduct').innerText = product.length + "sản phẩm";
+        }
+        showProduct();
+        function createNew(){
+            let newP = document.getElementById('new').value;
+            product.push(newP);
+            showProduct();
+            document.getElementById('new').value = "";
+        }
+        function Delete(index){
+            product.splice(index,1);
+            showProduct();
+        }
+        function Edit(index){
+            let newValue = prompt('nhập tên bạn muốn sửa',product[index]);
+            product[index] = newValue;
+            showProduct();
+        }
+    </script>
+</body>
+
+</html>
